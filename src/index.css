@@ -13,13 +13,13 @@ code {
 
 
 :root {
-  --bg:  #242526;
+  --bg: #242526;
   --bg-accent: #484a4d;
   --text-color: #dadce1;
   --nav-size: 60px;
   --border: 1px solid #474a4d;
   --border-radius: 8px;
-  --speed: 500ms; 
+  --speed: 500ms;
 }
 
 ul {
@@ -30,7 +30,13 @@ ul {
 
 a {
   color: var(--text-color);
-  text-decoration: none;;
+  text-decoration: none;
+  ;
+}
+
+.button-anchor {
+  color: var(--text-color);
+  text-decoration: none;
 }
 
 /* Top Navigation Bar */
@@ -78,7 +84,7 @@ a {
   filter: brightness(1.2);
 }
 
-.icon-button svg { 
+.icon-button svg {
   fill: var(--text-color);
   width: 20px;
   height: 20px;
@@ -135,13 +141,16 @@ a {
   position: absolute;
   transform: translateX(-110%);
 }
+
 .menu-primary-enter-active {
   transform: translateX(0%);
   transition: all var(--speed) ease;
 }
+
 .menu-primary-exit {
   position: absolute;
 }
+
 .menu-primary-exit-active {
   transform: translateX(-110%);
   transition: all var(--speed) ease;
@@ -151,13 +160,14 @@ a {
 .menu-secondary-enter {
   transform: translateX(110%);
 }
+
 .menu-secondary-enter-active {
   transform: translateX(0%);
   transition: all var(--speed) ease;
 }
-.menu-secondary-exit {
 
-}
+.menu-secondary-exit {}
+
 .menu-secondary-exit-active {
   transform: translateX(110%);
   transition: all var(--speed) ease;
